@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+body {
+    background-color: #161616;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.page{
+    height: 100vh;
+    display: flex;
+}
+.half-box{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+}
+/*remove bullet & clear defalut setting*/
+ul{
+    height: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 40px 25px 25px 25px;
+    padding: 0;
+}
+ul h3{
+    color: white; 
+    font-size: 3vh;
+    font-weight: bold; 
+    margin-left: 10px;
+}
+ul img{ 
+    margin-top: 5px;
+    width:8vh; 
+    border-radius: 100%;
+    margin-right: 10px;
+}
+/*defualt li is block to display in one line*/
+li{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+}
+li a{
+    display: inline;
+    text-align: center;
+    font-weight: bold;
+    padding: 14px 16px;
+    color: white;
+}
+li a:hover{
+    background-color: #182139;
+}
+
+.page{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    height: 100vh;
+}
+h1 {
+    color: white; 
+    font-weight: bold;
+    width: 60%; 
+    font-size: 10vh; /* Adjust the size as needed */
+    text-align: center; /* Center align the text */
+    text-transform: uppercase; /* Optional: transform text to uppercase */
+    margin: 20px auto; /* Add some spacing above and below the heading */
+    animation: glow 1s ease-in-out infinite alternate;
+}
+p{
+    font-size: 2vh;
+    color: white; 
+    width: 60%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.picture{
+    height: 80%;
+    border-radius: 10%;
+}
+
+.comment-form {
+    width: 80%;
+    position: relative;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.input-field {
+    position: relative;
+    width: 90%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.input-field input,
+.input-field textarea {
+    width: 100%;
+    border: 1px solid  rgb(255, 255, 255);
+    background: transparent;
+    outline: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
+    transition: border-color 0.3s;
+}
+.input-field textarea {
+    height: 10vh;
+}
+.input-field label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: white;
+    pointer-events: none;
+    transition: 0.3s;
+    background: #333;
+    padding: 0 5px;
+    z-index: 2;
+}
+
+.input-field input:focus,
+.input-field textarea:focus {
+    border: 1px solid green; /* Base focus border */
+}
+
+.input-field input:focus~label,
+.input-field textarea:focus~label,
+.input-field input:valid~label,
+.input-field textarea:valid~label {
+    top: 0;
+    left: 10px;
+    font-size: 12px;
+    background: #333;
+}
+
+.blue-glow {
+    animation: glow 1s ease-in-out infinite alternate;
+}
+.blue-glowing-picture {
+    box-shadow: 0 0 10px #fff, 0 0 20px #0077be, 0 0 30px #0077be, 0 0 40px #0077be;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 0.1em #fff, 0 0 0.2em #fff, 0 0 0.3em #0077be, 0 0 0.4em #0077be, 0 0 0.5em #0077be, 0 0 0.6em #0077be, 0 0 0.7em #0077be;
+    }
+
+    to {
+        text-shadow: 0 0 0.2em #fff, 0 0 0.3em #0099cc, 0 0 0.4em #0099cc, 0 0 0.5em #0099cc, 0 0 0.6em #0099cc, 0 0 0.7em #0099cc, 0 0 0.8em #0099cc;
+    }
+}
+
+.red-purple-glow {
+    color: #fff;
+    text-align: center;
+    animation: redPurpleGlow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes redPurpleGlow {
+    from {
+        text-shadow: 0 0 0.1em #fff, 0 0 0.2em #fff, 0 0 0.3em #e60073, 0 0 0.4em #e60073, 0 0 0.5em #e60073, 0 0 0.6em #e60073, 0 0 0.7em #e60073;
+    }
+
+    to {
+        text-shadow: 0 0 0.2em #fff, 0 0 0.3em #ff33cc, 0 0 0.4em #ff33cc, 0 0 0.5em #ff33cc, 0 0 0.6em #ff33cc, 0 0 0.7em #ff33cc, 0 0 0.8em #ff33cc;
+    }
+}
+
+.red-purple-glow2 {
+    box-shadow: 
+        0 0 0.2em #e60073, 
+        0 0 0.4em #e60073, 
+        0 0 0.6em #ff33cc, 
+        0 0 0.8em #ff33cc, 
+        0 0 1em #ff33cc, 
+        0 0 1.2em #ff33cc, 
+        0 0 1.4em #ff33cc;
+    animation: redPurpleGlow2 1s ease-in-out infinite alternate;
+}
+
+@keyframes redPurpleGlow2 {
+    from {
+        box-shadow: 
+            0 0 0.2em #e60073, 
+            0 0 0.4em #e60073, 
+            0 0 0.6em #e60073, 
+            0 0 0.8em #e60073, 
+            0 0 1em #e60073, 
+            0 0 1.2em #e60073, 
+            0 0 1.4em #e60073;
+    }
+    to {
+        box-shadow: 
+            0 0 0.4em #ff33cc, 
+            0 0 0.6em #ff33cc, 
+            0 0 0.8em #ff33cc, 
+            0 0 1em #ff33cc, 
+            0 0 1.2em #ff33cc, 
+            0 0 1.4em #ff33cc, 
+            0 0 1.6em #ff33cc;
+    }
+}
+
+/* button */
+.btn {
+    padding: 15px 40px;
+    border: none;
+    outline: none;
+    color: #FFF;
+    font-size: 2vh;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+  }
+  .btn::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+  /* glow */
+  .btn::before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+          #0077be, #43d0ff, #9beeff, #00ffdd , #00eaff , #43d0ff , #1d8fb5 , #016282
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height:  calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+  }
+  
+  @keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+  }
+  
+  /* hover */
+  .btn:hover::before {
+    opacity: 1;
+  }
+  
+  .btn:active:after {
+    background: transparent;
+  }
+  
+  .btn:active {
+    color: #000;
+    font-weight: bold;
+  }

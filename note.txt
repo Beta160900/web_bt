@@ -1,0 +1,5 @@
+image generator ->https://deepai.org/machine-learning-model/text2img
+generator -> https://perchance.org/ai-icon-generator
+design -> https://www.canva.com/design/DAGLM19DoMg/zD2bchN4zs0WwfxBZcTVRg/edit?utm_content=DAGLM19DoMg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton 
+
+firebase 1.make project 2.make collection 3.add to code js 

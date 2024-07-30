@@ -1,0 +1,25 @@
+how to add mango db
+1. cd server
+2.npm init -y
+-->make env
+3.npm install mongoose express
+-->install mongooes and install express
+-->จะเห็นว่า mainเป็นindex.js เลยใช้เป็นfile index.js 
+4.in package.json -> add script
+5.npm install nodemon
+6.in package.json ("script") add "start":"nodemon index.js"
+-->no need to rerun server every time update == auto update
+start by ( npm start )
+-->http://localhost:3001/users to pass ค่าusers
+
+ถ้าจะhost in githubจพได้แค่front end
+เลยมี2ทางเลือก 1.use java script +rest api in client-server 2.host client sever to github then hostbackend to vercel/netlify/heroku
+
+
+<form id="commentForm" class="comment-form">
+            <label for="fname">Name:</label><br>
+            <input type="text" id="fname" name="fname" style="width: 50%; padding: 10px; margin-bottom: 10px;"><br>
+            <label for="lname">Text:</label><br>
+            <textarea id="lname" name="lname" style="width: 98%; height: 15vh; padding: 10px; margin-bottom: 10px;"></textarea><br><br>
+            <input type="submit" value="Submit" style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 3px; cursor: pointer;">
+        </form>
